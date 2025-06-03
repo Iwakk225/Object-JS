@@ -16,3 +16,18 @@ var siswa2 = {
     jurusan : "Rekayasa Perangkat Lunak",
     email : "radityanala316@gmail.com"
 }
+
+
+// 2. function declaration
+// membuat object dengan function declaration
+function buatObjectSiswa(nama, kelas, umur, jurusan, email) {
+    var siswa = {};
+    siswa.nama = nama;
+    siswa.kelas = kelas;
+    siswa.umur = umur;
+    siswa.jurusan = jurusan;
+    siswa.email = email;
+    return siswa;
+}
+
+var siswa3 = buatObjectSiswa("Budi", "XI RPL 1", 18, "Rekayasa Perangkat Lunak", "budi@gmail.com");

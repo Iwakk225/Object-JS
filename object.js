@@ -31,3 +31,17 @@ function buatObjectSiswa(nama, kelas, umur, jurusan, email) {
 }
 
 var siswa3 = buatObjectSiswa("Budi", "XI RPL 1", 18, "Rekayasa Perangkat Lunak", "budi@gmail.com");
+
+// 3. constructor
+
+function Siswa(nama, kelas, umur, jurusan, email) {
+    // this keyword digunakan untuk mengacu pada object yang sedang dibuat
+    this.nama = nama;
+    this.kelas = kelas;
+    this.umur = umur;
+    this.jurusan = jurusan;
+    this.email = email;
+    // return this; // tidak perlu menuliskan return this, karena secara otomatis constructor akan mengembalikan object yang dibuat
+}
+
+var siswa4 = new Siswa("Andi", "XI RPL 1", 18, "Rekayasa Perangkat Lunak", "andi@gmail.com");
